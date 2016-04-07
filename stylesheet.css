@@ -2,22 +2,24 @@
 /* CSS Document */
 body {
     background-color: #d0e4fe;
-	font:Arial, Helvetica, sans-serif
+	font:Arial
 }
 
 h1 {
 	color: orange;
 	text-align: center;
 	font-style: italic;
+	font:Arial
 }
 
 ul {
 	background-color: orange;
+	font:Arial
 	
 }
 
 p {
-    
+    font:Arial
 }
 
 img {
