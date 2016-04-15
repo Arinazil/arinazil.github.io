@@ -13,12 +13,30 @@ h1 {
 }
 
 nav {
-	background-color: orange;
-	font-weight: bold;
-	font-size:16px
-	<html>
-	Hey
-	</html>
+    list-style-type: none;
+    overflow: hidden;
+    background-color: orange;
+	border: 1px solid white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #519afb;
+}
+
+.active {
+    background-color: #82b7fc;
 }
 
 p {
@@ -30,43 +48,53 @@ img {
 	
 }
 
-.dropdown {
-    position: relative;
+li {
+	border-right: 1px solid white;
+}
+
+li a {
+	padding: 14px 16px;
+	display:block;
+}
+
+
+nav:last-child {
+    border-right: none;
+}
+
+dropdown
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #519afb;
+}
+
+li.dropdown {
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
-	min-width: 100px;
+    background-color: orange;
 }
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #519afb}
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-testing
-
-ul#menu {
-    padding: 0;
-    margin-bottom: 11px;
-}
-
-ul#menu li {
-    display: inline;
-    margin-right: 3px;
-}
-
-ul#menu li a {
-    background-color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #696969;
-    border-radius: 4px 4px 0 0;
-}
-
-ul#menu li a:hover {
-    color: white;
-    background-color: black;
+	border:1px solid white;
 }
