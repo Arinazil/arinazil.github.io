@@ -1,13 +1,3 @@
-function setActive() {
-  aObj = document.getElementById('nav01').getElementsByTagName('a');
-  for(i=0;i<aObj.length;i++) { 
-    if(document.location.href.indexOf(aObj[i].href)>=0) {
-      aObj[i].className='active';
-    }
-  }
-}
-window.onload = setActive;
-
 document.getElementById("nav01").innerHTML =
 "<nav>"+
   "<li><a href='http://www.arinazil.co.uk'>Home</a></li>"+
@@ -28,3 +18,12 @@ document.getElementById("nav01").innerHTML =
   "</li>"+
   "<li><a href='http://www.arinazil.co.uk/testing'>Testing</a></li>";
 "</nav>";
+
+$(function() {
+     var pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("/")+1);
+     $("#nav ul li a").each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).addClass("active");
+     })
+});
